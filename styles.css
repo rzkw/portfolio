@@ -148,12 +148,14 @@ section {
     max-width: 180px;
     max-height: 180px;
     overflow: hidden;
+    translate: 35% -10%;
 }
 
 .imgContainer img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    transform: rotate(-15deg);
     /* border-radius: 0%; */
 }
 
@@ -161,9 +163,10 @@ section {
 .aboutMe {
     /* border: yellowgreen 1px solid; */
     line-height: 1.5em;
-    text-align: right;
+    text-align: justify;
     justify-content: center;
-    width: 100%; 
+    width: 40%; 
+    margin-left: auto;
 }
 
 
@@ -235,15 +238,16 @@ section {
     }
 }
 
+
 .outreach {
-    padding-top: 100px;
+    /* border: purple 1px solid; */
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 14px;
     cursor: pointer;
-    width: 100%;
-    margin-right: auto;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 25%;
     text-decoration: none;
 }
 
@@ -252,15 +256,17 @@ section {
 }
 
 .circle-2 {
+    position: absolute;
+    z-index: -1;
     color: #fff;
     background: #fc2;
     padding: 5%;
-    width: 400px;
+    width: 380px;
     height: 360px;
     margin: 0 -15px;
     mix-blend-mode: multiply;
-    border-radius: 70%;
-    translate: 70% 20%;
+    border-radius: 70% 30%;
+    translate: 90% -20%;
     transform: skew(5deg, 10deg) rotate(180deg);
     margin-top: -200px;
     opacity: 70%;

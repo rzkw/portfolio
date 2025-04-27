@@ -1,0 +1,27 @@
+To position .circle-2 underneath both <section class="projectContainer"> and the <a> link with the outreach class, you can use CSS to adjust its z-index and positioning. Here's how you can do it:
+
+Steps:
+Set .circle-2 to position: absolute: This allows you to position .circle-2 relative to its nearest positioned ancestor (e.g., the <section> or <main> element).
+
+Ensure .circle-2 is behind other elements: Use a lower z-index for .circle-2 and a higher z-index for the outreach link and other content.
+
+Adjust .circle-2's position: Use top, left, or other positioning properties to place .circle-2 visually underneath the desired elements.
+
+.circle-2 {
+    position: absolute; /* Position it absolutely */
+    top: 100%; /* Adjust to place it below the projectContainer */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: -1; /* Place it behind other elements */
+    opacity: 0.7; /* Optional: Keep it semi-transparent */
+}
+
+.outreach {
+    position: relative; /* Ensure it's above .circle-2 */
+    z-index: 1; /* Higher z-index than .circle-2 */
+}
+
+.projectContainer {
+    position: relative; /* Ensure .circle-2 is positioned relative to this */
+    z-index: 1; /* Higher z-index than .circle-2 */
+}
