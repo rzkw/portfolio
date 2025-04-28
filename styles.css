@@ -133,7 +133,6 @@ section {
     gap: 200px;
     align-items: center;
     margin-top: -200px;
-    /* border: purple 1px solid; */
 
 }
 
@@ -144,6 +143,7 @@ section {
 } */
 
 .imgContainer {
+    border: purple 1px solid;
     border-radius: 50%;
     max-width: 180px;
     max-height: 180px;
@@ -231,13 +231,6 @@ section {
     font-size: 0.9em;
 }
 
-@media (min-width: 640px) {
-    .aboutMe {
-        max-width: 80%;
-        margin-right: auto;
-    }
-}
-
 
 .outreach {
     /* border: purple 1px solid; */
@@ -271,4 +264,22 @@ section {
     margin-top: -200px;
     opacity: 70%;
     /* border: purple 1px solid; */
+}
+
+@media only screen and (max-width: 640px) {
+    .body {
+        flex-direction: column;
+    }
+    .Container {
+        width: 100%;
+    }
+
+    .imgContainer {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .circle-2 {
+        translate: 90%;
+    }
 }
